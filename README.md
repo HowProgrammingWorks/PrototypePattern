@@ -1,2 +1,1 @@
-# PrototypePattern
-Prototype - Creational GoF Pattern
+# Prototype (Creational GoF Pattern)
