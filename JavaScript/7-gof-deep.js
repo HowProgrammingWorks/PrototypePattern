@@ -32,8 +32,15 @@ class Line {
     this.#end = end;
   }
 
+  move(x, y) {
+    this.#start.move(x, y);
+    this.#end.move(x, y);
+  }
+
   clone() {
-    return new Line(this.#start, this.#end);
+    const start = this.#start.clone();
+    const end = this.#end.clone();
+    return new Line(start, end);
   }
 
   toString() {
@@ -48,4 +55,5 @@ const p2 = new Point(10, 20);
 const line = new Line(p1, p2);
 console.log(line.toString());
 const clone = line.clone();
+clone.move(2, 3);
 console.log(clone.toString());
