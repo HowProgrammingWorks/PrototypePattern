@@ -38,7 +38,7 @@ try {
     move(x, y) {
       this.x += x;
       this.y += y;
-    }
+    },
   };
   console.log(p2);
   const c2 = structuredClone(p2);
